@@ -30,11 +30,11 @@ function setup() {
 	Bob5 = new Bob(507,400)
 
 	Roof = new Ground(400,200,300,40)
-	Rope1 = new chain(Bob1,Roof)
-  Rope2 = new chain(Bob2,Roof)
-  Rope3 = new chain(Bob3,Roof)
-  Rope4 = new chain(Bob4,Roof)
-  Rope5 = new chain(Bob5,Roof)
+	Rope1 = new chain(Bob1.body,Roof.body)
+  Rope2 = new chain(Bob2.body,Roof.body)
+  Rope3 = new chain(Bob3.body,Roof.body)
+  Rope4 = new chain(Bob4.body,Roof.body)
+  Rope5 = new chain(Bob5.body,Roof.body)
 	
 	Engine.run(engine);
   
@@ -56,6 +56,10 @@ function draw() {
 
   Roof.display()
   Rope1.display()
+	Rope2.display()
+	Rope3.display()
+	Rope4.display()
+	Rope5.display()
  
 }
 
